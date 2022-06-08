@@ -23,6 +23,15 @@
             text-decoration: none;
             color: blue;
         }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .info {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -32,16 +41,39 @@
         <h1>HELLO WORLD</h1>
     </header>
 
-
     <nav>
         <ul>
-            @foreach($menuList as $menu)
+
             <li>
-                <a href="">{{$menu}}</a>
+                <a href="/">Home</a>
             </li>
-            @endforeach
+            <li>
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="/contacts">Contacts</a>
+            </li>
+            <li>
+                <a href="/more">More</a>
+            </li>
+            <li>
+                <a href="/address">Address</a>
+            </li>
+
         </ul>
     </nav>
+
+    <main>
+        <div class="container">
+            <div class="info">
+               <ol>
+                   @foreach($data as $course)
+                   <li><a href="#">{{$course}}</a></li>
+                   @endforeach
+               </ol>
+            </div>
+        </div>
+    </main>
 
 </body>
 

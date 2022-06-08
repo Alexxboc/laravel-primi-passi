@@ -35,11 +35,23 @@
 
     <nav>
         <ul>
-            @foreach($menuList as $menu)
+           
             <li>
-                <a href="">{{$menu}}</a>
+                <a href="/">Home</a>
             </li>
-            @endforeach
+            <li>
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="/contacts">Contacts</a>
+            </li>
+            <li>
+                <a href="/more">More</a>
+            </li>
+            <li>
+                <a href="/address">Address</a>
+            </li>
+        
         </ul>
     </nav>
 

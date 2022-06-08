@@ -14,29 +14,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $menuList = ['Home', 'About', 'Contacts', 'More', 'Address'];
-    return view('home', compact('menuList'));
-});
+    $data = ['Learn php', 'Learn laravel', 'Learn css', 'Learn html', 'Learn javascript', 'Learn VueJs'];
+    return view('home', compact('data'));
+})->name('home');
 
 Route::get('/about', function () {
-    $menuList = ['Home', 'About', 'Contacts', 'More', 'Address'];
-    return view('about', compact('menuList'));
-});
+
+    return view('about');
+})->name('about');
 
 Route::get('/contacts', function () {
-    $menuList = ['Home', 'About', 'Contacts', 'More', 'Address'];
-    return view('contacts', compact('menuList'));
-});
+
+    return view('contacts');
+})->name('contacts');
 
 Route::get('/more', function () {
-    $menuList = ['Home', 'About', 'Contacts', 'More', 'Address'];
-    return view('more', compact('menuList'));
-});
+
+    return view('more');
+})->name('more');
 
 Route::get('/address', function () {
-    $menuList = ['Home', 'About', 'Contacts', 'More', 'Address'];
-    return view('address', compact('menuList'));
-});
+
+    return view('address');
+})->name('address');
 
 
 
