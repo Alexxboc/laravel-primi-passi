@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $menuList = ['Home', 'About', 'Contacts', 'More info', 'Game'];
+    return view('home', compact('menuList'));
 });
