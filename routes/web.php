@@ -14,6 +14,30 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $menuList = ['Home', 'About', 'Contacts', 'More info', 'Game'];
+    $menuList = ['Home', 'About', 'Contacts', 'More', 'Address'];
     return view('home', compact('menuList'));
 });
+
+Route::get('/about', function () {
+    $menuList = ['Home', 'About', 'Contacts', 'More', 'Address'];
+    return view('about', compact('menuList'));
+});
+
+Route::get('/contacts', function () {
+    $menuList = ['Home', 'About', 'Contacts', 'More', 'Address'];
+    return view('contacts', compact('menuList'));
+});
+
+Route::get('/more', function () {
+    $menuList = ['Home', 'About', 'Contacts', 'More', 'Address'];
+    return view('more', compact('menuList'));
+});
+
+Route::get('/address', function () {
+    $menuList = ['Home', 'About', 'Contacts', 'More', 'Address'];
+    return view('address', compact('menuList'));
+});
+
+
+
+

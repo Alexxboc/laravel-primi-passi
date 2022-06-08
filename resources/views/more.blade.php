@@ -29,7 +29,7 @@
 <body>
 
     <header>
-        <h1>HELLO WORLD</h1>
+        <h1>MORE INFO</h1>
     </header>
 
 
